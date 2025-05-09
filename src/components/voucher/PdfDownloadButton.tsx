@@ -48,7 +48,7 @@ export const PdfDownloadButton: React.FC<PdfDownloadButtonProps> = ({
 	return (
 		<Button
 			onClick={handlePrint}
-			className="w-full mt-6 pdf-download-button-container"
+			className="w-full mt-6 pdf-download-button-container not-printable"
 			disabled={isPrinting}
 		>
 			<Printer className="mr-2 h-4 w-4" />

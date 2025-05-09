@@ -135,7 +135,7 @@ export default function HomePage() {
 	return (
 		<>
 			<main className="container mx-auto px-4 py-8 md:px-6 md:py-12">
-				<header className="mb-10 text-center">
+				<header className="mb-10 text-center not-printable">
 					<h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-primary">
 						Voucher Generator <span className="text-yellow-400">Pro</span>
 					</h1>
@@ -145,7 +145,7 @@ export default function HomePage() {
 				</header>
 
 				<div className="grid lg:grid-cols-12 gap-8 items-start">
-					<div className="lg:col-span-5 xl:col-span-4 space-y-8">
+					<div className="lg:col-span-5 xl:col-span-4 space-y-8 not-printable">
 						<VoucherForm
 							defaultValues={clientInitializedData} // Use the fully initialized data for the form
 							onFormChange={handleFormChange}
@@ -167,9 +167,9 @@ export default function HomePage() {
 					</div>
 				</div>
 
-				<Separator className="my-12" />
+				<Separator className="my-12 not-printable" />
 
-				<footer className="text-center text-muted-foreground text-sm">
+				<footer className="text-center text-muted-foreground text-sm not-printable">
 					<p>
 						&copy; {new Date().getFullYear()} Voucher Generator Pro. Built with
 						Ashraf Atef.

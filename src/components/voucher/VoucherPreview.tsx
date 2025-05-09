@@ -36,7 +36,7 @@ export const VoucherPreview: React.FC<VoucherPreviewProps> = ({
 
 	return (
 		<div className="p-4 border rounded-lg shadow-sm bg-muted/30">
-			<h3 className="text-lg font-semibold mb-4 text-foreground flex items-center gap-2">
+			<h3 className="text-lg font-semibold mb-4 text-foreground flex items-center gap-2 not-printable">
 				<Eye className="w-5 h-5 text-primary" />
 				Live Preview
 			</h3>
